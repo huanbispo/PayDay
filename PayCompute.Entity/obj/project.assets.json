@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Entity\\PayCompute.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Entity\\PayCompute.Entity.csproj",
       "projectName": "PayCompute.Entity",
-      "projectPath": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Entity\\PayCompute.Entity.csproj",
+      "projectPath": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Entity\\PayCompute.Entity.csproj",
       "packagesPath": "C:\\Users\\HuanA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Entity\\obj\\",
+      "outputPath": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5839,11 +5839,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
       "projectName": "PayCompute.Persistence",
-      "projectPath": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
+      "projectPath": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
       "packagesPath": "C:\\Users\\HuanA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5864,8 +5864,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Entity\\PayCompute.Entity.csproj": {
-              "projectPath": "C:\\Users\\HuanA\\Documents\\Projetos\\PayCompute.Entity\\PayCompute.Entity.csproj"
+            "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Entity\\PayCompute.Entity.csproj": {
+              "projectPath": "C:\\Users\\HuanA\\Documents\\PayComputeApp\\PayCompute.Entity\\PayCompute.Entity.csproj"
             }
           }
         }
