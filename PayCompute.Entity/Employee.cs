@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+
+namespace PayCompute.Entity
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string EmployeeNo { get; set; }
+
+        [Required, MaxLength(50)]
+        public string FirstName { get; set; }
+
+        [MaxLength(50)]
+        public string MiddleName { get; set; }
+
+        [Required, MaxLength(50)]
+        public string LastName { get; set; }
+
+        public string FullName { get; set; }
+
+        public string Gender { get; set; }
+
+        public string ImageUrl { get; set; }
+
+        public DateTime DOB { get; set; } // Date of Birth
+
+        public DateTime DateJoin { get; set; }
+
+        public string Designation { get; set; }
+
+        public string Email { get; set; }
+
+        [Required, MaxLength(50)]
+        public string NationalInsuranceNo { get; set; } // The same of Social Security No
+
+        public PaymentMethod paymentMethod { get; set; }
+
+        public StudentLoan studentLoan { get; set; }
+
+        public UnionMember unionMember { get; set; }
+
+        [Required, MaxLength(150)]
+        public string Address { get; set; }
+
+        [Required, MaxLength(50)]
+        public string City { get; set; }
+
+        [Required, MaxLength(50)]
+        public string PostCode { get; set; }
+
+        public IEnumerable<PaymentRecord> PaymentRecords { get; set; }
+    }
+}

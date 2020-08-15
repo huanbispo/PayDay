@@ -1,0 +1,15 @@
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.deps.json
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.dll
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.pdb
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Entity.dll
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Entity.pdb
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csprojAssemblyReference.cache
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.AssemblyInfoInputs.cache
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.AssemblyInfo.cs
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csproj.CopyComplete
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.dll
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.pdb
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.runtimeconfig.json
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.runtimeconfig.dev.json
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\HuanA\Documents\Projetos\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.genruntimeconfig.cache
