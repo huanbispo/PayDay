@@ -2,23 +2,21 @@
 using PayCompute.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PayCompute.Models
 {
-    public class EmployeeCreateViewModel
+    public class EmployeeEditViewModel
     {
-
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Employee Number is required"),
+        [Required(ErrorMessage = "Employee Number is required"),
             RegularExpression(@"^[A-Z] {3,3} [0,9] {3}$")]
         public string EmployeeNo { get; set; }
 
-        [Required(ErrorMessage ="First Name is required"), StringLength(50, MinimumLength = 2),
+        [Required(ErrorMessage = "First Name is required"), StringLength(50, MinimumLength = 2),
             RegularExpression(@"^[A-Z][a-z-Z""'\s-]$"), Display(Name = "First Name")]
         public string FirstName { get; set; }
 
@@ -29,14 +27,6 @@ namespace PayCompute.Models
             RegularExpression(@"^[A-Z][a-z-Z""'\s-]$"), Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        public string FullName 
-        { 
-            get 
-            {
-                return FirstName + (string.IsNullOrEmpty(MiddleName)? " " : (" " + (char?)MiddleName[0] + ".").ToUpper()) + LastName;
-            }
-        }
-
         public string Gender { get; set; }
         [Display(Name = "Photo")]
         public IFormFile ImageUrl { get; set; }
@@ -44,7 +34,7 @@ namespace PayCompute.Models
         [DataType(DataType.Date), Display(Name = "Date of Birth")]
         public DateTime DOB { get; set; } // Date of Birth
         [DataType(DataType.Date), Display(Name = "Date Joined")]
-        public DateTime DateJoined { get; set; } = DateTime.UtcNow; // gets us the current datetime
+        public DateTime DateJoined { get; set; }
 
         public string Phone { get; set; }
 
@@ -72,7 +62,7 @@ namespace PayCompute.Models
         [Required, StringLength(50)]
         public string City { get; set; }
 
-        [Required, StringLength(50), Display(Name ="Post Code")]
+        [Required, StringLength(50), Display(Name = "Post Code")]
         public string PostCode { get; set; }
     }
 }
