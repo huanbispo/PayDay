@@ -198,3 +198,5 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\static
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.dll
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.pdb
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.genruntimeconfig.cache
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs

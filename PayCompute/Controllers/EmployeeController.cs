@@ -12,11 +12,11 @@ using System.Threading.Tasks;
 
 namespace PayCompute.Controllers
 {
-    public class EmployeeControler : Controller
+    public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
         private readonly IWebHostEnvironment _hostingEnvironment;
-        public EmployeeControler(IEmployeeService employeeService, IWebHostEnvironment hostingEnvironment)
+        public EmployeeController(IEmployeeService employeeService, IWebHostEnvironment hostingEnvironment)
         {
             _employeeService = employeeService;
             _hostingEnvironment = hostingEnvironment;
