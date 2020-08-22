@@ -51,6 +51,16 @@ namespace PayCompute.Controllers
         [ValidateAntiForgeryToken] // Prevents cross-site Request Forgery Attacks
         public async Task<IActionResult> Create(EmployeeCreateViewModel model)
         {
+            /* Check if there already is an employee with this number in the database ***/
+            var checkEmployeeNo = _employeeService.GetAll();
+            if (checkEmployeeNo.Where(s => s.EmployeeNo == model.EmployeeNo).FirstOrDefault() != null)
+            {
+                ViewBag.EmployeeNo = "There already is an employee with this number!";
+
+                return View();
+            }
+            /*************/
+
             if (ModelState.IsValid)
             {
                 var employee = new Employee
@@ -98,6 +108,10 @@ namespace PayCompute.Controllers
 
                     // The imageUrl that will go to the database
                     employee.ImageUrl = "/" + uploadDir + "/" + fileName;
+                }
+                else
+                {
+                    employee.ImageUrl = "~/images/employee/User.jpg";
                 }
 
                 await _employeeService.CreateAsync(employee);
@@ -172,7 +186,7 @@ namespace PayCompute.Controllers
                 employee.City = model.City;
                 employee.PostCode = model.PostCode;
 
-                if (employee.ImageUrl != null && model.ImageUrl.Length > 0)
+                if (employee.ImageUrl != null)
                 {
                     // this will be the upload direcotory
                     var uploadDir = @"images/employee";

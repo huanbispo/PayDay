@@ -11,20 +11,12 @@ namespace PayCompute.Models
     public class EmployeeEditViewModel
     {
         public int Id { get; set; }
-
-        [Required(ErrorMessage = "Employee Number is required"),
-            RegularExpression(@"^[A-Z] {3,3} [0,9] {3}$")]
         public string EmployeeNo { get; set; }
 
-        [Required(ErrorMessage = "First Name is required"), StringLength(50, MinimumLength = 2),
-            RegularExpression(@"^[A-Z][a-z-Z""'\s-]$"), Display(Name = "First Name")]
         public string FirstName { get; set; }
 
-        [StringLength(50), Display(Name = "Middle Name")]
         public string MiddleName { get; set; }
 
-        [Required(ErrorMessage = "Last Name is required"), StringLength(50, MinimumLength = 2),
-            RegularExpression(@"^[A-Z][a-z-Z""'\s-]$"), Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         public string Gender { get; set; }
@@ -33,7 +25,7 @@ namespace PayCompute.Models
 
         [DataType(DataType.Date), Display(Name = "Date of Birth")]
         public DateTime DOB { get; set; } // Date of Birth
-        [DataType(DataType.Date), Display(Name = "Date Joined")]
+
         public DateTime DateJoined { get; set; }
 
         public string Phone { get; set; }
@@ -44,9 +36,6 @@ namespace PayCompute.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        // SSN 
-        [Required, MaxLength(50), Display(Name = "NI No.")]
-        [RegularExpression(@"^[A-CEGHJ-PR-TW-Z] {1} [A-CEGHJ-PR-TW-Z] {1} {0-9} {6} [A-D\s]$")]
         public string NationalInsuranceNo { get; set; } // The same of Social Security No
 
         [Display(Name = "Payment Method")]
