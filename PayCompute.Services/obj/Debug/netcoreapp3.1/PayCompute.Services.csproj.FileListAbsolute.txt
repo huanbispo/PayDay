@@ -25,3 +25,4 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Services\obj\Debug\netcoreapp3
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.csproj.CopyComplete
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.dll
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.pdb
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.csproj.CoreCompileInputs.cache
