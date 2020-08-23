@@ -208,3 +208,6 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Micros
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Create.cshtml.g.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Detail.cshtml.g.cs

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PayCompute.Services.Implementation
 {
-    class PayComputationService : IPayComputationService
+    public class PayComputationService : IPayComputationService
     {
         private decimal overtimeHours;
         private decimal contractualEarnings;
