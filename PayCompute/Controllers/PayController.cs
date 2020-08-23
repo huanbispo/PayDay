@@ -2,6 +2,7 @@
 using PayCompute.Entity;
 using PayCompute.Models;
 using PayCompute.Services;
+using RotativaCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -185,6 +186,22 @@ namespace PayCompute.Controllers
             };
 
             return View(model);
+        }
+
+        public IActionResult GeneratePayslipPDF(int id)
+        {
+            /* Rotativa Core Framework (3.0)
+             * We gonna use the third overload 
+             * which has 2 parameters
+             * The action string and the route value that it is the id (in our case)
+             */
+            var payslip = new ActionAsPdf("Payslip", new { id = id })
+            {
+                // The fileName that is gonna be downloaded
+                FileName = "Payslip.pdf"
+            };
+
+            return payslip;
         }
 
     }

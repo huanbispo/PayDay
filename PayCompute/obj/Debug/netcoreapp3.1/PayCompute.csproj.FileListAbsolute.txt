@@ -172,9 +172,6 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\PayCom
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.csprojAssemblyReference.cache
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.AssemblyInfoInputs.cache
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.AssemblyInfo.cs
-C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.csproj.CoreCompileInputs.cache
-C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.RazorAssemblyInfo.cache
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.RazorAssemblyInfo.cs
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.TagHelpers.input.cache
@@ -211,3 +208,15 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Newton
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Create.cshtml.g.cs
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Detail.cshtml.g.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Payslip.cshtml.g.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\RotativaCore.dll
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.csproj.CoreCompileInputs.cache
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\obj\Debug\netcoreapp3.1\PayCompute.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\WkHtmlToPdf\wkhtmltoimage.exe
+C:\Users\HuanA\Documents\PayComputeApp\PayCompute\bin\Debug\netcoreapp3.1\WkHtmlToPdf\wkhtmltopdf.exe
