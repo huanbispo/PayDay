@@ -12,6 +12,7 @@ namespace PayCompute.Services.Implementation
     {
         // Conection with DBContext
         private readonly ApplicationDbContext _context;
+        private decimal studentLoanAmount;
 
         public EmployeeService(ApplicationDbContext context)
         {
@@ -53,9 +54,37 @@ namespace PayCompute.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
+        // How to calculate student Loan Repayment  (UK)
+        //https://www.gov.uk/repaying-your-student-loan/what-you-pay
+        /*
+         * You pay 9% of your income over the threshold
+         * (Monthly Salary)
+         * (Monthly Repayment)
+         * 
+         */
         public decimal StudenLoanRepaymentAmount(int id, decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+
+            if (employee.studentLoan == StudentLoan.Yes && totalAmount > 1750 && totalAmount < 2000)
+            {
+                studentLoanAmount = 15m;
+            }
+            else if (employee.studentLoan == StudentLoan.Yes && totalAmount > 2000 && totalAmount < 2250)
+            {
+                studentLoanAmount = 38m;
+            }
+            else if (employee.studentLoan == StudentLoan.Yes && totalAmount >= 2500)
+            {
+                studentLoanAmount = 83m;
+            }
+            else
+            {
+                studentLoanAmount = 0m;
+            }
+
+            return studentLoanAmount;
+
         }
 
         public decimal UnionFees(int id)

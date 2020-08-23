@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PayCompute.Services
 {
-    interface IPayComputationService
+    public interface IPayComputationService
     {
         Task CreateAsync(PaymentRecord paymentRecord);
         PaymentRecord GetbyId(int id);
