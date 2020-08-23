@@ -11,6 +11,7 @@ namespace PayCompute.Services
     {
         Task CreateAsync(PaymentRecord paymentRecord);
         PaymentRecord GetbyId(int id);
+        TaxYear GetTaxYearById(int id);
         IEnumerable<PaymentRecord> GetAll();
         IEnumerable<SelectListItem> GetAllTaxYear();
         //The total hours worked minus contractual hours

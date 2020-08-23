@@ -55,6 +55,8 @@ namespace PayCompute.Services.Implementation
 
         public PaymentRecord GetbyId(int id) => _context.PaymentRecords.Where(pay => pay.Id == id).SingleOrDefault();
 
+        public TaxYear GetTaxYearById(int id) => _context.TaxYears.Where(year => year.Id == id).SingleOrDefault();
+
         public decimal NetPay(decimal totalEarnings, decimal totalDeduction) => totalEarnings - totalDeduction;
 
         public decimal OvertimeEarnings(decimal overtimeRate, decimal overtimeHours) => overtimeHours * overtimeRate;
@@ -80,5 +82,6 @@ namespace PayCompute.Services.Implementation
             => tax + nic + studentLoanRepayment + unionFees;
 
         public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings) => overtimeEarnings + contractualEarnings;
+
     }
 }
