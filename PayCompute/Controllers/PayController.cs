@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PayCompute.Entity;
 using PayCompute.Models;
 using PayCompute.Services;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace PayCompute.Controllers
 {
+    [Authorize(Roles = "Admin, Manager")]
     public class PayController : Controller
     {
         private readonly IPayComputationService _payComputationService;
@@ -57,6 +59,7 @@ namespace PayCompute.Controllers
             return View(payRecord);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewBag.employees = _employeeService.GetAllEmployeesForPayroll();
@@ -67,6 +70,7 @@ namespace PayCompute.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(PaymentRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -148,6 +152,7 @@ namespace PayCompute.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Payslip(int id)
         {
             var paymentRecord = _payComputationService.GetbyId(id);
@@ -191,9 +196,8 @@ namespace PayCompute.Controllers
         public IActionResult GeneratePayslipPDF(int id)
         {
             /* Rotativa Core Framework (3.0)
-             * We gonna use the third overload 
-             * which has 2 parameters
-             * The action string and the route value that it is the id (in our case)
+             * We gonna use the third overload (passing just two parameter, 
+             *                                  The nameOfFile and the ID of the PayRecord)
              */
             var payslip = new ActionAsPdf("Payslip", new { id = id })
             {

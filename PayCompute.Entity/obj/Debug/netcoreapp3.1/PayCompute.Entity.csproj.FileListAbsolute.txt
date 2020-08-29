@@ -15,4 +15,3 @@ C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Entity\obj\Debug\netcoreapp3.1
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.csproj.CoreCompileInputs.cache
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.dll
 C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.pdb
-C:\Users\HuanA\Documents\PayComputeApp\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.csprojAssemblyReference.cache

@@ -32,8 +32,34 @@ namespace PayCompute
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(options => 
+            {
+                // Default Password Settings
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                /*
+                 * The user lockout feature is a way to improve application security by
+                 * locking out
+                 * a user that enters a password incorrectly severaltimes
+                 * Security agaisnt brute force attacks
+                 */
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+            });
+                
+
             services.AddControllersWithViews();
             services.AddRazorPages();
             // Add a service in the container
@@ -44,7 +70,10 @@ namespace PayCompute
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app,
+                             IWebHostEnvironment env,
+                             UserManager<IdentityUser> userManager,
+                             RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -63,7 +92,11 @@ namespace PayCompute
             app.UseRouting();
 
             app.UseAuthentication();
+
+            DataSendingInitializer.UserAndRoleSeedAsync(userManager, roleManager).Wait();
+
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

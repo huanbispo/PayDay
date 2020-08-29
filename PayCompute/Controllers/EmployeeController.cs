@@ -5,14 +5,15 @@ using PayCompute.Entity;
 using PayCompute.Models;
 using PayCompute.Services;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Paycompute;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PayCompute.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
