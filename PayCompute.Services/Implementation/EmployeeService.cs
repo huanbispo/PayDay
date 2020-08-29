@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using PayCompute.Entity;
 using PayCompute.Persistence;
 using System;
@@ -39,8 +40,11 @@ namespace PayCompute.Services.Implementation
             _context.Remove(employee);
             await _context.SaveChangesAsync();
         }
-        
-        public IEnumerable<Employee> GetAll() => _context.Employees;
+
+        /* Will get all the employees in the database
+         * AsNoTracking will speed up the performance, just a performance optimization technique
+         */
+        public IEnumerable<Employee> GetAll() => _context.Employees.AsNoTracking().OrderByDescending(emp => emp.FullName);
 
         // updates the info of the employee
         public async Task UpdateAsync(Employee employee)

@@ -1,5 +1,5 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model IEnumerable<EmployeeIndexViewModel>
+@model Paycompute.EmployeeListPagination<EmployeeIndexViewModel>
 
 @{
     ViewBag.Title = "Employee";
@@ -63,7 +63,24 @@
                                     </tr>
                                 }
                             </tbody>
-                        </table>
+                        </table><br />
+                        @{
+                            @* Disassemble our previous and Next buttons *@
+                            var disablePrevious = !Model.IsPreviousPageAvailable ? "disabled" : "";
+                            var disableNext = !Model.IsNextPageAvailable ? "disabled" : "";
+                        }
+
+                        <a asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageIndex - 1)"
+                           class="btn btn-primary @disablePrevious">
+                            Previous
+                        </a>
+                        <a asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageIndex + 1)"
+                           class="btn btn-primary @disableNext">
+                            Next
+                        </a>
+
                     </div>
                 </div>
 

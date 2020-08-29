@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Paycompute;
 
 namespace PayCompute.Controllers
 {
@@ -22,7 +23,7 @@ namespace PayCompute.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? pageNumber)
         {
             var employees = _employeeService.GetAll().Select(employee => new EmployeeIndexViewModel 
             {
@@ -36,7 +37,10 @@ namespace PayCompute.Controllers
                 DateJoined = employee.DateJoined
             }).ToList();
 
-            return View(employees);
+            int pageSize = 4;
+
+            // if a page number is provided use that, otherwise, use 1
+            return View(EmployeeListPagination<EmployeeIndexViewModel>.Create(employees, pageNumber ?? 1, pageSize));
         }
 
         [HttpGet]
