@@ -6,7 +6,7 @@ namespace PayCompute.Persistence
     public static class DataSendingInitializer
     {
         public static async Task UserAndRoleSeedAsync(UserManager<IdentityUser> userManager,
-                                                RoleManager<IdentityRole> roleManager)
+                                                      RoleManager<IdentityRole> roleManager)
         {
             // Array of group members ( Role )
             string[] roles = { "Admin", "Manager", "Staff" };
@@ -20,15 +20,15 @@ namespace PayCompute.Persistence
                 }
             }
             // Create Admin User
-            if (userManager.FindByEmailAsync("huanaraujo@hotmail.com").Result == null)
+            if (userManager.FindByEmailAsync("admin@hotmail.com").Result == null)
             {
                 IdentityUser user = new IdentityUser
                 {
                     /*
                      * Because of the current trend, we gonna use UserName as email, just like FANG
                      */
-                    UserName = "huanaraujo@hotmail.com",
-                    Email = "huanaraujo@hotmail.com"
+                    UserName = "admin@hotmail.com",
+                    Email = "admin@hotmail.com"
                 };
 
                 IdentityResult identityResult = userManager.CreateAsync(user, "Admin123").Result;
@@ -58,15 +58,15 @@ namespace PayCompute.Persistence
             }
 
             // Create Staff User
-            if (userManager.FindByEmailAsync("abdel.doe@gmail.com").Result == null)
+            if (userManager.FindByEmailAsync("Jenny.doe@gmail.com").Result == null)
             {
                 IdentityUser user = new IdentityUser
                 {
                     /*
                      * Because of the current trend, we gonna use UserName as email, just like FANG
                      */
-                    UserName = "abdel.doe@gmail.com",
-                    Email = "abdel.doe@gmail.com"
+                    UserName = "Jenny.doe@gmail.com",
+                    Email = "Jenny.doe@gmail.com"
                 };
 
                 IdentityResult identityResult = userManager.CreateAsync(user, "Staff123").Result;
